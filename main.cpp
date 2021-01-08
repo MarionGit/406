@@ -24,6 +24,7 @@ int main()
     }
     else{
         std::cout<<"dico non trouve"<<std::endl;
+        break;
     }
     std::cout<<"saisir mot"<<std::endl;
     std::cin>>mot;
