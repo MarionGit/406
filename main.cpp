@@ -9,7 +9,8 @@ int main()
     std::fstream dictionnaire;
     std::string line, mot;
     std::unordered_set<std::string> table;
-
+    
+    ///afficher mots
     dictionnaire.open("words.txt");
     if (dictionnaire.is_open())
     {
@@ -26,7 +27,8 @@ int main()
     }
     std::cout<<"saisir mot"<<std::endl;
     std::cin>>mot;
-
+    
+    ///Trouve ou pas
     if (table.find (mot)==table.end())
     {
         std::cout<<"mot pas trouve"<<std::endl;
